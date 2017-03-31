@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    style="@style/AppTheme"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.android.pupekasbc2.MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/logo_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/logo" />
+
+        <TextView
+            android:id="@+id/gmail_text"
+            style="@style/TextRelativeLayoutUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:autoLink="email"
+            android:text="@string/gmail_acc" />
+
+        <TextView
+            android:id="@+id/url_text"
+            style="@style/TextRelativeLayoutDown"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:autoLink="web"
+            android:text="@string/ppk_url" />
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/middle_layout"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/whoarewe_text"
+            style="@style/TextLinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="@string/whoarewe" />
+
+
+        <LinearLayout
+            android:id="@+id/donate_layout"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="horizontal">
+            <!-- TODO change imageViews into buttons -->
+            <ImageButton
+                android:id="@+id/paypal"
+                style="@style/ImageViews"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/drawable" />
+
+            <ImageButton
+                android:id="@+id/iban"
+                style="@style/ImageViews"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/lacaixa" />
+
+            <ImageButton
+                android:id="@+id/teaming"
+                style="@style/ImageViews"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/teaming" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/imageViewLast"
+        style="@style/ImageViewLast"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:src="@drawable/fondo" />
+
+</LinearLayout>

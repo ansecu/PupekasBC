@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Pupekas BC 2</string>
+    <string name="gmail_acc">pupekas@gmail.com</string>
+    <string name="ppk_url">http://www.pupekas.com/</string>
+    <string name="whoarewe">We are a NGO that rescues dogs at Níjar (Almería - Spain), and we need your help to continue our mission.</string>
+    <string name="paypal">donate! paypal</string>
+    <string name="iban">donate! Bank Account</string>
+    <string name="teaming">donate! www.teaming.org </string>
+
+
+</resources>
